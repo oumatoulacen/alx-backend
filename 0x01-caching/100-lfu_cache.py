@@ -18,9 +18,12 @@ class LFUCache(BaseCaching):
             if key in self.cache_data:
                 self.order.remove(key)
             elif len(self.cache_data) >= self.MAX_ITEMS:
+                discard = self.order.pop(0)
                 self.order.sort(key=lambda k: self.times.get(
                     k) if self.times.get(k) is not None else 1)
-                discard = self.order.pop(0)
+                check = self.times.get(discard)
+                if check is not None and check > 1:
+                    discard = self.order.pop(0)
                 if discard in self.times:
                     del self.times[discard]
                 del self.cache_data[discard]
