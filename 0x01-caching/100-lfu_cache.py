@@ -15,9 +15,7 @@ class LFUCache(BaseCaching):
     def put(self, key, item):
         ''' Assign the item to key of a dictionary '''
         if key and item:
-            if key in self.cache_data:
-                self.order.remove(key)
-            elif len(self.cache_data) >= self.MAX_ITEMS:
+            if len(self.cache_data) >= self.MAX_ITEMS:
                 discard = self.order.pop(0)
                 self.order.sort(key=lambda k: self.times.get(
                     k) if self.times.get(k) is not None else 1)
@@ -28,6 +26,8 @@ class LFUCache(BaseCaching):
                     del self.times[discard]
                 del self.cache_data[discard]
                 print('DISCARD: {}'.format(discard))
+            if key in self.cache_data:
+                self.order.remove(key)
             self.order.append(key)
             self.cache_data[key] = item
 
