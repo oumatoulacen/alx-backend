@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>{{_('home_header')}}</h1>
-    {% if user %}
+    {% if user is not None %}
         <p>{{_('logged_in_as', username=user.get('name'))}}</p>
     {% else %}
         <p>{{_('not_logged_in')}}</p>
