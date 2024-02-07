@@ -39,7 +39,7 @@ app.config.from_object(Config)
 def index():
     ''' This is the index page.'''
     print('Hello World!')
-    return render_template('3-index.html')
+    return render_template('4-index.html')
 
 
 if __name__ == '__main__':
