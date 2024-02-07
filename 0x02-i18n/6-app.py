@@ -24,10 +24,12 @@ def get_locale():
     login_as = request.args.get('login_as')
     if login_as:
         user = get_user(int(login_as))
-        if user is not None:
+        if user is not None and user['locale'] in app.config['LANGUAGES']:
             return user['locale']
 
-    return request.accept_languages.best_match(app.config['LANGUAGES'])
+    return request.accept_languages.best_match(
+        app.config['LANGUAGES'],
+        default=app.config['BABEL_DEFAULT_LOCALE'])
 
 
 class Config:
