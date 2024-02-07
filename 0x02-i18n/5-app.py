@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 '''' This is a simple web application that uses Flask to serve a web page.'''
 import babel
 from flask import Flask, g, render_template, request
