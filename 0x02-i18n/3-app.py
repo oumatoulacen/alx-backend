@@ -9,15 +9,15 @@ from flask_babel import Babel
 app = Flask(__name__)
 
 
-def get_locale():
-    ''' determines the best match supported language.'''
-    return request.accept_languages.best_match(app.config['LANGUAGES'])
-
-
-babel = Babel(app, locale_selector=get_locale)
+babel = Babel(app)
 app.url_map.strict_slashes = False
 CORS(app)
 
+
+@babel.localeselector
+def get_locale():
+    ''' determines the best match supported language.'''
+    return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 class Config:
     ''' This is the configuration for the app.'''
