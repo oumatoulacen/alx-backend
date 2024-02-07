@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-#!/usr/bin/env python3
 '''' This is a simple web application that uses Flask to serve a web page.'''
 import babel
 from flask import Flask, g, render_template, request
 from flask_cors import CORS
 from flask_babel import Babel
 import pytz
+from flask_babel import format_datetime
+from datetime import datetime
 
 
 app = Flask(__name__)
@@ -96,7 +97,8 @@ def get_timezone():
 @app.route('/')
 def index():
     ''' This is the index page.'''
-    return render_template('6-index.html', user=g.user)
+    current_time = format_datetime(datetime.now())
+    return render_template('index.html', user=g.user, current_time=current_time)
 
 
 if __name__ == '__main__':
