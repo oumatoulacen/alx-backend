@@ -9,22 +9,27 @@ from flask_babel import Babel
 app = Flask(__name__)
 
 
-babel = Babel(app)
+def get_locale():
+    ''' determines the best match supported language.'''
+    return request.accept_languages.best_match(app.config['LANGUAGES'])
+
+
+babel = Babel(app, locale_selector=get_locale)
 app.url_map.strict_slashes = False
 CORS(app)
 
 
-@babel.localeselector
-def get_locale():
-    ''' determines the best match supported language.'''
-    return request.accept_languages.best_match(app.config['LANGUAGES'])
+# @babel.localeselector
+# def get_locale():
+#     ''' determines the best match supported language.'''
+#     return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 
 class Config:
     ''' This is the configuration for the app.'''
     DEBUG = False
     LANGUAGES = ['en', 'fr']
-    BABEL_DEFAULT_LOCALE = 'en'
+    BABEL_DEFAULT_LOCALE = 'fr'
     BABEL_DEFAULT_TIMEZONE = 'UTC'
 
 
