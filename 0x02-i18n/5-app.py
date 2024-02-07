@@ -53,7 +53,7 @@ def get_user(login_as: int):
 def before_request():
     ''' This function sets the user if login_as is in the request.'''
     login_as = request.args.get('login_as')
-    if login_as is not None:
+    if login_as:
         user = get_user(int(login_as))
         if user is not None:
             g.user = user
