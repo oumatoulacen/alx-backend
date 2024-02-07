@@ -57,6 +57,8 @@ def before_request():
         user = get_user(int(login_as))
         if user is not None:
             g.user = user
+        else:
+            g.user = None
     else:
         g.user = None
 
