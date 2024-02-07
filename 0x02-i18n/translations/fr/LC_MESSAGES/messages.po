@@ -1,0 +1,721 @@
+# French translations for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-02-07 03:09+0100\n"
+"PO-Revision-Date: 2024-02-07 03:09+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
+
+#: env/lib/python3.10/site-packages/click/_termui_impl.py:518
+msgid "{editor}: Editing failed"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/_termui_impl.py:522
+msgid "{editor}: Editing failed: {e}"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/core.py:1120
+msgid "Aborted!"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/core.py:1309
+#: env/lib/python3.10/site-packages/click/decorators.py:559
+msgid "Show this message and exit."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/core.py:1340
+#: env/lib/python3.10/site-packages/click/core.py:1370
+msgid "(Deprecated) {text}"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/core.py:1387
+msgid "Options"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/core.py:1415
+msgid "Got unexpected extra argument ({args})"
+msgid_plural "Got unexpected extra arguments ({args})"
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.10/site-packages/click/core.py:1428
+msgid "DeprecationWarning: The command {name!r} is deprecated."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/core.py:1636
+msgid "Commands"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/core.py:1668
+msgid "Missing command."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/core.py:1746
+msgid "No such command {name!r}."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/core.py:2310
+msgid "Value must be an iterable."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/core.py:2333
+msgid "Takes {nargs} values but 1 was given."
+msgid_plural "Takes {nargs} values but {len} were given."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.10/site-packages/click/core.py:2778
+msgid "env var: {var}"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/core.py:2808
+msgid "(dynamic)"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/core.py:2821
+msgid "default: {default}"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/core.py:2834
+msgid "required"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/decorators.py:465
+#, python-format
+msgid "%(prog)s, version %(version)s"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/decorators.py:528
+msgid "Show the version and exit."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/exceptions.py:44
+#: env/lib/python3.10/site-packages/click/exceptions.py:80
+msgid "Error: {message}"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/exceptions.py:72
+msgid "Try '{command} {option}' for help."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/exceptions.py:121
+msgid "Invalid value: {message}"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/exceptions.py:123
+msgid "Invalid value for {param_hint}: {message}"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/exceptions.py:179
+msgid "Missing argument"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/exceptions.py:181
+msgid "Missing option"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/exceptions.py:183
+msgid "Missing parameter"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/exceptions.py:185
+msgid "Missing {param_type}"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/exceptions.py:192
+msgid "Missing parameter: {param_name}"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/exceptions.py:212
+msgid "No such option: {name}"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/exceptions.py:226
+msgid "Did you mean {possibility}?"
+msgid_plural "(Possible options: {possibilities})"
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.10/site-packages/click/exceptions.py:262
+msgid "unknown error"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/exceptions.py:269
+msgid "Could not open file {filename!r}: {message}"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/parser.py:231
+msgid "Argument {name!r} takes {nargs} values."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/parser.py:413
+msgid "Option {name!r} does not take a value."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/parser.py:473
+msgid "Option {name!r} requires an argument."
+msgid_plural "Option {name!r} requires {nargs} arguments."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.10/site-packages/click/shell_completion.py:318
+msgid "Shell completion is not supported for Bash versions older than 4.4."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/shell_completion.py:326
+msgid "Couldn't detect Bash version, shell completion is not supported."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/termui.py:158
+msgid "Repeat for confirmation"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/termui.py:174
+msgid "Error: The value you entered was invalid."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/termui.py:176
+msgid "Error: {e.message}"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/termui.py:187
+msgid "Error: The two entered values do not match."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/termui.py:243
+msgid "Error: invalid input"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/termui.py:773
+msgid "Press any key to continue..."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/types.py:266
+msgid ""
+"Choose from:\n"
+"\t{choices}"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/types.py:300
+msgid "{value!r} is not {choice}."
+msgid_plural "{value!r} is not one of {choices}."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.10/site-packages/click/types.py:394
+msgid "{value!r} does not match the format {format}."
+msgid_plural "{value!r} does not match the formats {formats}."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.10/site-packages/click/types.py:414
+msgid "{value!r} is not a valid {number_type}."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/types.py:470
+msgid "{value} is not in the range {range}."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/types.py:611
+msgid "{value!r} is not a valid boolean."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/types.py:635
+msgid "{value!r} is not a valid UUID."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/types.py:822
+msgid "file"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/types.py:824
+msgid "directory"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/types.py:826
+msgid "path"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/types.py:877
+msgid "{name} {filename!r} does not exist."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/types.py:886
+msgid "{name} {filename!r} is a file."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/types.py:894
+msgid "{name} '{filename}' is a directory."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/types.py:903
+msgid "{name} {filename!r} is not readable."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/types.py:912
+msgid "{name} {filename!r} is not writable."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/types.py:921
+msgid "{name} {filename!r} is not executable."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/click/types.py:987
+msgid "{len_type} values are required, but {len_value} was given."
+msgid_plural "{len_type} values are required, but {len_value} were given."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.10/site-packages/flask_wtf/file.py:55
+#: env/lib/python3.10/site-packages/wtforms/validators.py:293
+#: env/lib/python3.10/site-packages/wtforms/validators.py:323
+msgid "This field is required."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/flask_wtf/file.py:93
+msgid "File does not have an approved extension: {extensions}"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/flask_wtf/file.py:101
+msgid "File does not have an approved extension."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/flask_wtf/file.py:140
+msgid "File must be between {min_size} and {max_size} bytes."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/validators.py:86
+#, python-format
+msgid "Invalid field name '%s'."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/validators.py:99
+#, python-format
+msgid "Field must be equal to %(other_name)s."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/validators.py:145
+#, python-format
+msgid "Field must be at least %(min)d character long."
+msgid_plural "Field must be at least %(min)d characters long."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.10/site-packages/wtforms/validators.py:151
+#, python-format
+msgid "Field cannot be longer than %(max)d character."
+msgid_plural "Field cannot be longer than %(max)d characters."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.10/site-packages/wtforms/validators.py:157
+#, python-format
+msgid "Field must be exactly %(max)d character long."
+msgid_plural "Field must be exactly %(max)d characters long."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.10/site-packages/wtforms/validators.py:163
+#, python-format
+msgid "Field must be between %(min)d and %(max)d characters long."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/validators.py:216
+#, python-format
+msgid "Number must be at least %(min)s."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/validators.py:219
+#, python-format
+msgid "Number must be at most %(max)s."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/validators.py:222
+#, python-format
+msgid "Number must be between %(min)s and %(max)s."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/validators.py:358
+msgid "Invalid input."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/validators.py:422
+msgid "Invalid email address."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/validators.py:460
+msgid "Invalid IP address."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/validators.py:503
+msgid "Invalid Mac address."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/validators.py:540
+msgid "Invalid URL."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/validators.py:561
+msgid "Invalid UUID."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/validators.py:594
+#, python-format
+msgid "Invalid value, must be one of: %(values)s."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/validators.py:629
+#, python-format
+msgid "Invalid value, can't be any of: %(values)s."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/validators.py:698
+msgid "This field cannot be edited"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/validators.py:714
+msgid "This field is disabled and cannot have a value"
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/csrf/core.py:96
+msgid "Invalid CSRF Token."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/csrf/session.py:63
+msgid "CSRF token missing."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/csrf/session.py:71
+msgid "CSRF failed."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/csrf/session.py:76
+msgid "CSRF token expired."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/fields/choices.py:141
+msgid "Invalid Choice: could not coerce."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/fields/choices.py:148
+#: env/lib/python3.10/site-packages/wtforms/fields/choices.py:202
+msgid "Choices cannot be None."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/fields/choices.py:154
+msgid "Not a valid choice."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/fields/choices.py:192
+msgid "Invalid choice(s): one or more data inputs could not be coerced."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/fields/choices.py:211
+#, python-format
+msgid "'%(value)s' is not a valid choice for this field."
+msgid_plural "'%(value)s' are not valid choices for this field."
+msgstr[0] ""
+msgstr[1] ""
+
+#: env/lib/python3.10/site-packages/wtforms/fields/datetime.py:51
+msgid "Not a valid datetime value."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/fields/datetime.py:77
+msgid "Not a valid date value."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/fields/datetime.py:103
+msgid "Not a valid time value."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/fields/datetime.py:148
+msgid "Not a valid week value."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/fields/numeric.py:82
+#: env/lib/python3.10/site-packages/wtforms/fields/numeric.py:92
+msgid "Not a valid integer value."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/fields/numeric.py:168
+msgid "Not a valid decimal value."
+msgstr ""
+
+#: env/lib/python3.10/site-packages/wtforms/fields/numeric.py:197
+msgid "Not a valid float value."
+msgstr ""
+
+#: microblog/app/translate.py:9
+msgid "Error: the translation service is not configured."
+msgstr ""
+
+#: microblog/app/translate.py:20
+msgid "Error: the translation service failed."
+msgstr ""
+
+#: microblog/app/auth/email.py:8
+msgid "[Microblog] Reset Your Password"
+msgstr ""
+
+#: microblog/app/auth/forms.py:30 microblog/app/main/forms.py:26
+msgid "Please use a different username."
+msgstr ""
+
+#: microblog/app/auth/forms.py:36
+msgid "Please use a different email address."
+msgstr ""
+
+#: microblog/app/auth/routes.py:23
+msgid "Invalid username or password"
+msgstr ""
+
+#: microblog/app/auth/routes.py:30 microblog/app/templates/auth/login.html:5
+msgid "Sign In"
+msgstr ""
+
+#: microblog/app/auth/routes.py:49
+msgid "Congratulations, you are now a registered user!"
+msgstr ""
+
+#: microblog/app/auth/routes.py:51 microblog/app/templates/auth/register.html:5
+msgid "Register"
+msgstr ""
+
+#: microblog/app/auth/routes.py:66
+msgid "Check your email for the instructions to reset your password"
+msgstr ""
+
+#: microblog/app/auth/routes.py:69
+#: microblog/app/templates/auth/reset_password_request.html:5
+msgid "Reset Password"
+msgstr ""
+
+#: microblog/app/auth/routes.py:83
+msgid "Your password has been reset."
+msgstr ""
+
+#: microblog/app/main/routes.py:39
+msgid "Your post is now live!"
+msgstr ""
+
+#: microblog/app/main/routes.py:49 microblog/app/templates/base.html:27
+msgid "Home"
+msgstr ""
+
+#: microblog/app/main/routes.py:66 microblog/app/templates/base.html:30
+msgid "Explore"
+msgstr ""
+
+#: microblog/app/main/routes.py:105
+msgid "Your changes have been saved."
+msgstr ""
+
+#: microblog/app/main/routes.py:110 microblog/app/templates/edit_profile.html:5
+msgid "Edit Profile"
+msgstr ""
+
+#: microblog/app/main/routes.py:122 microblog/app/main/routes.py:143
+#, python-format
+msgid "User %(username)s not found."
+msgstr ""
+
+#: microblog/app/main/routes.py:125
+msgid "You cannot follow yourself!"
+msgstr ""
+
+#: microblog/app/main/routes.py:129
+#, python-format
+msgid "You are following %(username)s!"
+msgstr ""
+
+#: microblog/app/main/routes.py:146
+msgid "You cannot unfollow yourself!"
+msgstr ""
+
+#: microblog/app/main/routes.py:150
+#, python-format
+msgid "You are not following %(username)s."
+msgstr ""
+
+#: microblog/app/main/routes.py:177
+msgid "Search"
+msgstr ""
+
+#: microblog/app/main/routes.py:193
+msgid "Your message has been sent."
+msgstr ""
+
+#: microblog/app/main/routes.py:195
+msgid "Send Message"
+msgstr ""
+
+#: microblog/app/main/routes.py:223
+msgid "An export task is currently in progress"
+msgstr ""
+
+#: microblog/app/main/routes.py:225
+msgid "Exporting posts..."
+msgstr ""
+
+#: microblog/app/templates/_post.html:14
+#, python-format
+msgid "%(username)s said %(when)s"
+msgstr ""
+
+#: microblog/app/templates/_post.html:25
+msgid "Translate"
+msgstr ""
+
+#: microblog/app/templates/base.html:9
+msgid "Welcome to Microblog"
+msgstr ""
+
+#: microblog/app/templates/base.html:43
+msgid "Login"
+msgstr ""
+
+#: microblog/app/templates/base.html:47 microblog/app/templates/messages.html:4
+msgid "Messages"
+msgstr ""
+
+#: microblog/app/templates/base.html:57
+msgid "Profile"
+msgstr ""
+
+#: microblog/app/templates/base.html:60
+msgid "Logout"
+msgstr ""
+
+#: microblog/app/templates/index.html:5
+#, python-format
+msgid "Hi, %(username)s!"
+msgstr ""
+
+#: microblog/app/templates/index.html:16 microblog/app/templates/search.html:12
+#: microblog/app/templates/user.html:47
+msgid "Newer posts"
+msgstr ""
+
+#: microblog/app/templates/index.html:21 microblog/app/templates/search.html:17
+#: microblog/app/templates/user.html:52
+msgid "Older posts"
+msgstr ""
+
+#: microblog/app/templates/messages.html:12
+msgid "Newer messages"
+msgstr ""
+
+#: microblog/app/templates/messages.html:17
+msgid "Older messages"
+msgstr ""
+
+#: microblog/app/templates/search.html:4
+msgid "Search Results"
+msgstr ""
+
+#: microblog/app/templates/send_message.html:5
+#, python-format
+msgid "Send Message to %(recipient)s"
+msgstr ""
+
+#: microblog/app/templates/user.html:8
+msgid "User"
+msgstr ""
+
+#: microblog/app/templates/user.html:11
+#: microblog/app/templates/user_popup.html:7
+msgid "Last seen on"
+msgstr ""
+
+#: microblog/app/templates/user.html:13
+#: microblog/app/templates/user_popup.html:9
+#, python-format
+msgid "%(count)d followers"
+msgstr ""
+
+#: microblog/app/templates/user.html:13
+#: microblog/app/templates/user_popup.html:9
+#, python-format
+msgid "%(count)d following"
+msgstr ""
+
+#: microblog/app/templates/user.html:15
+msgid "Edit your profile"
+msgstr ""
+
+#: microblog/app/templates/user.html:17
+msgid "Export your posts"
+msgstr ""
+
+#: microblog/app/templates/user.html:23
+#: microblog/app/templates/user_popup.html:15
+msgid "Follow"
+msgstr ""
+
+#: microblog/app/templates/user.html:30
+#: microblog/app/templates/user_popup.html:22
+msgid "Unfollow"
+msgstr ""
+
+#: microblog/app/templates/user.html:35
+msgid "Send private message"
+msgstr ""
+
+#: microblog/app/templates/auth/login.html:7
+msgid "New User?"
+msgstr ""
+
+#: microblog/app/templates/auth/login.html:7
+msgid "Click to Register!"
+msgstr ""
+
+#: microblog/app/templates/auth/login.html:9
+msgid "Forgot Your Password?"
+msgstr ""
+
+#: microblog/app/templates/auth/login.html:10
+msgid "Click to Reset It"
+msgstr ""
+
+#: microblog/app/templates/auth/reset_password.html:5
+msgid "Reset Your Password"
+msgstr ""
+
+#: microblog/app/templates/errors/404.html:4
+msgid "Not Found"
+msgstr ""
+
+#: microblog/app/templates/errors/404.html:5
+#: microblog/app/templates/errors/500.html:6
+msgid "Back"
+msgstr ""
+
+#: microblog/app/templates/errors/500.html:4
+msgid "An unexpected error has occurred"
+msgstr ""
+
+#: microblog/app/templates/errors/500.html:5
+msgid "The administrator has been notified. Sorry for the inconvenience!"
+msgstr ""
+
+#: templates/3-index.html:6
+msgid "home_title"
+msgstr "Bienvenue chez Holberton"
+
+#: templates/3-index.html:9
+msgid "home_header"
+msgstr "Bonjour monde!"
+
