@@ -25,9 +25,8 @@ app.config.from_object(Config)
 
 @babel.locale_selector
 def get_locale():
-    return 'en'
-    # ''' determines the best match supported language.'''
-    # return request.accept_languages.best_match(app.config['LANGUAGES'])
+    ''' determines the best match supported language.'''
+    return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 
 @app.route('/')
