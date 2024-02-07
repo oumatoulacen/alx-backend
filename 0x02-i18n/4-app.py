@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 '''' This is a simple web application that uses Flask to serve a web page.'''
 import babel
 from flask import Flask, render_template, request
@@ -17,9 +18,9 @@ CORS(app)
 @babel.localeselector
 def get_locale():
     ''' determines the best match supported language.'''
-    # if request.args.get('locale'):
-    #     if request.args.get('locale') in app.config['LANGUAGES']:
-    #         return request.args.get('locale')
+    lan = request.args.get('locale')
+    if lan is not None and lan in app.config['LANGUAGES']:
+        return lan
     return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 
