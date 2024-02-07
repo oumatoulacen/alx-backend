@@ -65,9 +65,7 @@ def before_request():
 @app.route('/')
 def index():
     ''' This is the index page.'''
-    print('Hello World!')
-    username = g.user.get('name')
-    return render_template('5-index.html', username=username, login_as=g.user)
+    return render_template('5-index.html', user=g.user)
 
 
 if __name__ == '__main__':
