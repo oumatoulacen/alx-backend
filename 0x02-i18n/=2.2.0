@@ -1,0 +1,2 @@
+Requirement already satisfied: Werkzeug in ./env/lib/python3.10/site-packages (3.0.1)
+Requirement already satisfied: MarkupSafe>=2.1.1 in ./env/lib/python3.10/site-packages (from Werkzeug) (2.1.3)
