@@ -19,6 +19,7 @@ def get_locale():
     ''' determines the best match supported language.'''
     return request.accept_languages.best_match(app.config['LANGUAGES'])
 
+
 class Config:
     ''' This is the configuration for the app.'''
     DEBUG = False
