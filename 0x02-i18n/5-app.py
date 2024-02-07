@@ -43,7 +43,7 @@ users = {
 }
 
 
-def get_user(login_as):
+def get_user(login_as: int) -> dict | None:
     ''' returns a user dictionary or None if the ID cannot be found.'''
     if login_as in users:
         return users[login_as]
