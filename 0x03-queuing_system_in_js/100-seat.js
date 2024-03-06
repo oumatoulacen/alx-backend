@@ -4,6 +4,7 @@ const kue = require("kue");
 const express = require("express");
 
 const client = redis.createClient();
+
 const app = express();
 const q = kue.createQueue();
 
