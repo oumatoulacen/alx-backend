@@ -48,7 +48,8 @@ class Server:
         current_index = index
         items_collected = 0
 
-        while items_collected < page_size and current_index < len(self.indexed_dataset()):
+        while (items_collected < page_size and
+               current_index < len(self.indexed_dataset())):
             item = self.indexed_dataset().get(current_index)
             if item is not None:
                 data.append(item)
@@ -62,20 +63,20 @@ class Server:
             'next_index': current_index
         }
 
-    # def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
-    #     '''Get the data for a given hypermedia pagination'''
-    #     isinstance(page_size, int)
-    #     assert 0 <= index < len(self.indexed_dataset())
-    #     data = []
-    #     next_index = index + page_size
-    #     for i in range(index, next_index):
-    #         if self.indexed_dataset().get(i):
-    #             data.append(self.indexed_dataset()[i])
-    #         else:
-    #             next_index += 1
-    #     return {
-    #         'index': index,
-    #         'data': data,
-    #         'page_size': page_size,
-    #         'next_index': next_index
-    #     }
+# def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
+#     '''Get the data for a given hypermedia pagination'''
+#     isinstance(page_size, int)
+#     assert 0 <= index < len(self.indexed_dataset())
+#     data = []
+#     next_index = index + page_size
+#     for i in range(index, next_index):
+#         if self.indexed_dataset().get(i):
+#             data.append(self.indexed_dataset()[i])
+#         else:
+#             next_index += 1
+#     return {
+#         'index': index,
+#         'data': data,
+#         'page_size': page_size,
+#         'next_index': next_index
+#     }
