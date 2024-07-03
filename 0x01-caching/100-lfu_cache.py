@@ -15,21 +15,18 @@ class LFUCache(BaseCaching):
     def put(self, key, item):
         ''' Assign the item to key of a dictionary '''
         if key and item:
-            if len(self.cache_data) >= self.MAX_ITEMS:
-                discard = self.order.pop(0)
-                self.order.sort(key=lambda k: self.times.get(
-                    k) if self.times.get(k) is not None else 1)
-                check = self.times.get(discard)
-                if check is not None and check > 1:
-                    discard = self.order.pop(0)
-                if discard in self.times:
-                    del self.times[discard]
-                del self.cache_data[discard]
-                print('DISCARD: {}'.format(discard))
             if key in self.cache_data:
                 self.order.remove(key)
+                del self.cache_data[key]
+            if len(self.cache_data) >= self.MAX_ITEMS:
+                self.order.sort(key=lambda k: self.times.get(k))
+                discard = self.order.pop(0)
+                del self.times[discard]
+                del self.cache_data[discard]
+                print('DISCARD: {}'.format(discard))
             self.order.append(key)
             self.cache_data[key] = item
+            self.times[key] = self.times[key] + 1 if key in self.times else 1
 
     def get(self, key):
         ''' Return the value linked to a key '''
