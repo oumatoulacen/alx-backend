@@ -13,12 +13,14 @@ class LIFOCache(BaseCaching):
     def put(self, key, item):
         ''' puts item in cache'''
         if key and item:
+            if key in self.cache_data:
+                self.stack.remove(key)
+                del self.cache_data[key]
             if len(self.cache_data) >= self.MAX_ITEMS:
                 discard = self.stack.pop()
                 del self.cache_data[discard]
                 print('DISCARD: {}'.format(discard))
-            if key in self.cache_data:
-                self.stack.remove(key)
+
             self.stack.append(key)
             self.cache_data[key] = item
 
