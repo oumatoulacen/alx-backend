@@ -1,5 +1,5 @@
 const redis = require("redis");
-import { promisify } from "util";
+const { promisify } = require("util");
 const kue = require("kue");
 const express = require("express");
 
@@ -58,4 +58,10 @@ app.get("/process", (req, res) => {
   res.json({ status: "Queue processing" });
 });
 
-app.listen("1245");
+app.listen("1245", () => {
+  console.log("Server started on http://localhost:1245");
+  console.log("Available endpoints:");
+  console.log("GET http://localhost:1245/available_seats");
+  console.log("GET http://localhost:1245/reserve_seat");
+  console.log("GET http://localhost:1245/process");
+});
